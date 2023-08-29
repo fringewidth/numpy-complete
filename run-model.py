@@ -7,8 +7,8 @@ class Layer:
     z=0
     a=0
     def __init__(self, w_path, b_path):
-        self.weights=np.loadtxt(w_path, delimiter=',')
-        self.biases=np.loadtxt(b_path, delimiter=',')
+        self.weights=np.load("trained_parameters.npz")[w_path]
+        self.biases=np.load("trained_parameters.npz")[b_path]
 
 
 #Define Activation Functions
@@ -19,10 +19,11 @@ def softmax(x):
     m=np.max(x)
     return np.exp(x-m)/np.exp(x-m).sum()
 
+
 #Initialise Layers:
-l1=Layer("model-parameters/layer1-weights.csv", "model-parameters/layer1-biases.csv")
-l2=Layer("model-parameters/layer2-weights.csv", "model-parameters/layer2-biases.csv")
-l3=Layer("model-parameters/layer3-weights.csv", "model-parameters/layer3-biases.csv")
+l1=Layer("l1_weights", "l1_biases")
+l2=Layer("l2_weights", "l2_biases")
+l3=Layer("l3_weights", "l3_biases")
 
 
 
