@@ -4,11 +4,7 @@ NumPy-Complete is a neural network to recognise handwritten digits, trained usin
 ## Installation
 1. Make sure the following packages are installed:
 ```sh
-pip install numpy
-pip install pandas
-pip install matplotlib
-pip install cv2
-pip install tkinter
+pip install numpy pandas matplotlib cv2 tkinter
 ```
 
 2. Clone the repository
