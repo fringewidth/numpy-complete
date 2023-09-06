@@ -19,11 +19,10 @@ git clone https://github.com/fringewidth/numpy-complete.git
 2. Run `run-model.py`
 
 ## Features
-- Recognises a handwritten digit from a 28 $\times$ 28 pixel grid using a feed-forward neural network with two hidden layers, 16 neurons each.
-- Accuraccy of 87.6% with an average cross entropy loss of 0.043
+- Recognises a handwritten digit from a 28 $\times$ 28 pixel grid using a feed-forward neural network with two hidden layers, with an accuracy of 87.6%.
 - Makes use of only NumPy for numerical processing. All functions ar custom implemented and modifiable.
 - Ability to run custom input.
 - Training notebook available for customizing the training process.
-- See [train.ipynb](./train.ipynb) for details on architecture and implementaion.
+See [train.ipynb](https://github.com/fringewidth/numpy-complete/blob/main/train.ipynb) for details on architecture and implementaion.
 
 
