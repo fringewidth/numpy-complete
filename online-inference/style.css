@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=B612+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary-color: #232323
+}
+
+*{
+    font-family: 'B612 Mono', monospace;
+}
+body{
+    background: #E3E1E1;
+    color: var(--primary-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    border: 1px solid var(--primary-color);
+    width: 20rem;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0 0 -0.5% 0;
+}
+
+
+.github{
+    margin-bottom: 1.67rem;
+    display: flex;
+    gap: 0.6rem
+}
+
+svg{
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: var(--primary-color);
+
+}
+
+a{
+    color: var(--primary-color);
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: repeat(28, 1fr);
+    gap: 1px;
+}
+
+.cell {
+    background-color: #1e1e1e;
+    height: 2vh;
+    width: 2vh;
+}
