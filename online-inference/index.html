@@ -7,6 +7,7 @@
     <title>NumPy-Complete: Inference</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
 </head>
 
 <body>
@@ -33,7 +34,9 @@
     </p>
     <div id="grid"></div>
     <p id="guess">Draw here.</p>
-    <button>Clear</button>
+    <canvas id="draw"></canvas>
+    <button id="clear">Clear</button>
+    <button id="predict">Predict</button>
 </body>
 
 </html>
