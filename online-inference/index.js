@@ -1,5 +1,5 @@
 async function loadModelParams() {
-  const response = await fetch("trained_parameters.json");
+  const response = await fetch("./online-inference/trained_parameters.json");
   return await response.json();
 }
 
