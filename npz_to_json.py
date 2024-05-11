@@ -7,5 +7,5 @@ model_json = {}
 for key in model_npz.keys():
     model_json[key] = model_npz[key].tolist()
 
-with open('trained_parameters.json', 'w') as f:
+with open('online-inference/trained_parameters.json', 'w') as f:
     json.dump(model_json, f, indent=1)
